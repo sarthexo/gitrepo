@@ -1,0 +1,49 @@
+Git Commands
+
+1.  Open the command prompt and run the command 
+git --version : version of the git software tool
+2. Create folder gitdemo on any drive
+3. Go inside the folder and right click and select the git bash, It will open the git terminal
+
+3. git init - It will initialized the git repository
+4. git status - It is use to find out the status of my source files 
+5. git add <filename> - Will add only specific file to the staging repository
+6. git rm --cached <filename>Remove file only from git repository, but not from the fileSystem.
+7. git add * - It will add all the files to the staging repository
+8. git add -A - It will add all the files to the staging repository
+9. git commit -m "initial version" - it will create a version for the source repository
+10. git rm --cached <filename> -f : It will forcefully delete the file from the staging
+11. git restore --staged <filename> : It will unstage the file
+12. git log : It will show the commit logs for my repository
+
+git config --list : It will list all the configuration parameters
+git config --global user.name <author name> : It will set the author name under whom the versions of git will be created
+git config  --global user.email <author email> : It will set the email of the author for the git changes
+git diff : It shows the difference between the last commited file and the file in the working area
+git diff --staged : It will show the difference between the last commited file and the file in the staging area
+git reset <commit> : this command will undo all commits after the specified commit and preserves the changes in local directory
+git reset --hard <commit> : this command discards all history and goes back to the specified commit
+git restore <filename> : It will help to restore the deleted file from your working area(local directory)
+git ls-files: It will list down all the files which are in the local repository
+git show : It will show the difference between the latest commit file and the current file
+git ls-tree --full-tree --name-only -r HEAD
+git log --pretty=oneline
+git log --pretty=full
+git log --pretty=medium
+git log --pretty=short
+git log --pretty=fuller
+git log --pretty=email
+
+git remote - It will list down all remote repositories
+git remote add origin <github url> - It will set the link between remote repository and the local repository
+git push origin master - It will update the remote repository with the latest version of the local repository
+git pull origin master - It will pull the latest code from the remote repository to the local repository
+git clone <github url> - It will create a copy of the remote repository to the local machine
+
+git branch - It will list down all the branches in current git repository
+git branch <branchname> - It will create a new branch with the given branchname
+git checkout <branchname> - It will change the head pointer to the checkout branch
+git merge <branchname> - It will merge the branch with the master branch, if the the eheckout branch is master
+git rebase master - It is a way of combining the work between different branches
+git branch -d or -D <branchname> - It will delete the branch
+git checkout -b <branchname> - It will create a new branch and checkout to the newly created branch
